@@ -2,15 +2,7 @@
 RGB_MATRIX_EFFECT(CUSTOM_SOLID_PATTERN)
 #    ifdef RGB_MATRIX_CUSTOM_EFFECT_IMPLS
 
-static HSV BAND_SPIRAL_SAT_math(HSV hsv, int16_t dx, int16_t dy, uint8_t dist, uint8_t time) {
-    hsv.s = scale8(hsv.s + dist - time - atan2_8(dy, dx), hsv.s);
-    return hsv;
-}
-
 bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
-
-    return effect_runner_dx_dy_dist(params, &BAND_SPIRAL_SAT_math);
-
     // Get the base color
     HSV hsv1 = rgb_matrix_config.hsv;
     RGB rgb1 = rgb_matrix_hsv_to_rgb(hsv1);
