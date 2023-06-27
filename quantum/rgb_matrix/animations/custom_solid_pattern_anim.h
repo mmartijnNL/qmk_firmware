@@ -20,9 +20,9 @@ bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
     rgb_matrix_set_color(5, rgb2.r, rgb2.g, rgb2.b);
     rgb_matrix_set_color(6, rgb2.r, rgb2.g, rgb2.b);
 
-    // F7 - F8?
+    // F7 - F8
     rgb_matrix_set_color(42, rgb2.r, rgb2.g, rgb2.b);
-    rgb_matrix_set_color(42, rgb2.r, rgb2.g, rgb2.b);
+    rgb_matrix_set_color(43, rgb2.r, rgb2.g, rgb2.b);
 
     // W
     rgb_matrix_set_color(18, rgb2.r, rgb2.g, rgb2.b);
@@ -30,6 +30,14 @@ bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
     rgb_matrix_set_color(24, rgb2.r, rgb2.g, rgb2.b);
     rgb_matrix_set_color(25, rgb2.r, rgb2.g, rgb2.b);
     rgb_matrix_set_color(26, rgb2.r, rgb2.g, rgb2.b);
+
+
+    // < - ?
+    rgb_matrix_set_color(77, 255, 0, 0);
+    rgb_matrix_set_color(78, 255, 0, 0);
+    rgb_matrix_set_color(79, 255, 0, 0);
+    // right windows
+    rgb_matrix_set_color(86, 255, 0, 0);
 
     // 6 - 2 ?
     // rgb_matrix_set_color(10, rgb2.r, rgb2.g, rgb2.b);
