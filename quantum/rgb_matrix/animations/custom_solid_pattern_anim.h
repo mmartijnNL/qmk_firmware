@@ -20,6 +20,17 @@ bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
     rgb_matrix_set_color(5, rgb2.r, rgb2.g, rgb2.b);
     rgb_matrix_set_color(6, rgb2.r, rgb2.g, rgb2.b);
 
+    // F7 - F8?
+    rgb_matrix_set_color(42, rgb2.r, rgb2.g, rgb2.b);
+    rgb_matrix_set_color(42, rgb2.r, rgb2.g, rgb2.b);
+
+    // W
+    rgb_matrix_set_color(18, rgb2.r, rgb2.g, rgb2.b);
+    // A S D ?
+    rgb_matrix_set_color(24, rgb2.r, rgb2.g, rgb2.b);
+    rgb_matrix_set_color(25, rgb2.r, rgb2.g, rgb2.b);
+    rgb_matrix_set_color(26, rgb2.r, rgb2.g, rgb2.b);
+
     // 6 - 2 ?
     // rgb_matrix_set_color(10, rgb2.r, rgb2.g, rgb2.b);
     // rgb_matrix_set_color(11, rgb2.r, rgb2.g, rgb2.b);
@@ -30,15 +41,24 @@ bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
     // M2 or down ?
     // rgb_matrix_set_color(15, 255, 255, 255);
 
-    // Experimental
-    rgb_matrix_set_color(20, 255, 0, 0);
-    rgb_matrix_set_color(30, 0, 255, 0);
-    rgb_matrix_set_color(40, 0, 0, 255);
-    rgb_matrix_set_color(50, 255, 255, 0);
-    rgb_matrix_set_color(60, 0, 255, 255);
-    rgb_matrix_set_color(70, 255, 0, 255);
-    rgb_matrix_set_color(80, 255, 255, 255);
 
+    // R or right space?
+    // rgb_matrix_set_color(20, 255, 0, 0);
+
+    // left shift or '"
+    // rgb_matrix_set_color(30, 0, 255, 0);
+
+    // FN or O ?
+    //rgb_matrix_set_color(40, 0, 0, 255);
+
+    // I
+    // rgb_matrix_set_color(60, 0, 255, 255);
+
+    // right shift
+    // rgb_matrix_set_color(80, 255, 255, 255);
+
+    // L
+    // rgb_matrix_set_color(70, 255, 0, 255);
 
     return rgb_matrix_check_finished_leds(led_max);
 }
