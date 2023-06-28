@@ -22,14 +22,23 @@ bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
         RGB_MATRIX_TEST_LED_FLAGS();
         switch (i)
         {
-            case 5:     // F5
-            case 6:     // F6
-            case 42:    // F7
-            case 43:    // F8
+            case 1:     // F1
+            case 2:     // F2
+            case 3:     // F3
+            case 4:     // F4
+            //case 5:     // F5
+            //case 6:     // F6
+            //case 42:    // F7
+            //case 43:    // F8
+            case 44:    // F9
+            case 45:    // F10
+            case 46:    // F11
+            case 47:    // F12
             case 18:    // W
             case 24:    // A
             case 25:    // S
             case 26:    // D
+            case 68:    // ENTER
                 rgb_matrix_set_color(i, rgb2.r, rgb2.g, rgb2.b);
                 break;
             default:
