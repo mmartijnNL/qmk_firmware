@@ -38,7 +38,7 @@ bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
             case 24:    // A
             case 25:    // S
             case 26:    // D
-            case 68:    // ENTER
+            case 63:    // ENTER
                 rgb_matrix_set_color(i, rgb2.r, rgb2.g, rgb2.b);
                 break;
             default:
