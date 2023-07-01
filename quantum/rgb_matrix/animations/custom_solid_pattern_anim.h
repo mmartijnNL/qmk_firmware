@@ -8,13 +8,10 @@ bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
     RGB rgb1 = rgb_matrix_hsv_to_rgb(hsv1);
     // Get the highlight color
     HSV hsv2;
-    hsv2.h = hsv1.h-85;
+    hsv2.h = (hsv1.h - 85 + 255) % 255;
     hsv2.s = hsv1.s;
     hsv2.v = hsv1.v;
     RGB rgb2 = rgb_matrix_hsv_to_rgb(hsv2);
-    rgb2.r = 0;
-    rgb2.g = 200;
-    rgb2.b = 255;
 
     RGB_MATRIX_USE_LIMITS(led_min, led_max);
 
