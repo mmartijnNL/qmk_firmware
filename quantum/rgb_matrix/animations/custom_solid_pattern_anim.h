@@ -36,7 +36,7 @@ bool CUSTOM_SOLID_PATTERN(effect_params_t* params) {
             case 25:    // S
             case 26:    // D
             //case 73:    // ENTER
-            case 75:    // UP
+            case 81:    // UP
             case 86:    // LEFT
             case 87:    // DOWN
             case 88:    // RIGHT
