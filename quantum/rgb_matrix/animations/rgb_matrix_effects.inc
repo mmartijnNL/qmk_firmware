@@ -38,3 +38,6 @@
 #include "solid_reactive_nexus.h"
 #include "splash_anim.h"
 #include "solid_splash_anim.h"
+
+// Custom effects
+#include "custom_solid_pattern_anim.h"
